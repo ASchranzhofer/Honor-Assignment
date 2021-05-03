@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+    
+    <title>Yugioh Tracker</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sets.html"><span class="fa fa-list fa-lg"></span> Sets</a></li>
+          </ul>
+          <span class="navbar-text">
+            <a id="LoginBtn">
+              <span class="fa fa-sign-in"></span> Login
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Yugioh Tracker</h1>
+                    <p>This site should help you to conviniently track your Yugioh Collection.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+    
+        <div class="row row-content align-items-center">
+            <div class="col-12">
+              <h2>New and upcoming Sets:</h2>
+            </div>
+            <div class="col col-sm order-sm-last col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/gftp.jpg" alt="Ghosts from the Past">
+                    <div class="media-body">
+                        <h2 class="mt-0">Ghosts from the Past <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$14.99</span></h2>
+                        <p class="d-none d-sm-block">History comes to life in Ghosts From the Past! This 132-card all-foil collector’s set bolsters 9 popular themes from the past, introduces 2 brand-new themes, helps you build some of the Decks featured both in this booster and in recent Core Boosters, and to top it all off, debuts 5 new Ghost Rares that’ll be must-haves for your collection!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col col-sm col-md">
+              <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/angu.png" alt="Ancient Guardians">
+                <div class="media-body">
+                  <h2 class="mt-0">Ancient Guardians </h2>
+                  <p class="d-none d-sm-block"> Ancient Guardians unearths powerful new monsters in Spring 2021! This 60-card booster set introduces 3 brand-new strategies along with older cards that enhance them. As in Toon Chaos and Genesis Impact, 15 cards from the set will also be available as Collector’s Rares, and these will include a mix of new cards and older favorites. </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/liov.jpg" alt="Lightning Overdrive">
+                    <div class="media-body">
+                        <h2 class="mt-0">Lightning Overdrive</h2>
+                        <p class="d-none d-sm-block">Lightning Overdrive is poised to shock the Dueling world and reinvigorate not one, but TWO beloved monsters from the worlds of the Yu-Gi-Oh! animated series!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./sets.html">Sets</a></li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+    
+</body>
+
+</html>
