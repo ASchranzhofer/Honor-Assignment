@@ -69,3 +69,15 @@ body {
 .checkbox-inline {
   float: right;
 }
+
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+
+.card-deck .col-sm-3 {
+  padding: 0px 0px;
+}
+
